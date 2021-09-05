@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState, useEffect } from "react";
+import HomeMain from "./component/Home-Main/HomeMain";
+// import Login from "./component/Login/Login";
+// import Register from "./component/Register/Register";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Admin } from "./component/admin/Admin";
+
 
 function App() {
+
+  // const [data,setData] = useState([])
+
+  // useEffect(()=>{
+  //   fetch('http://localhost:9000/')
+  //   .then(res => res.text())
+  //   .then(res => setData(res))
+  // },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <div className="App">
+          <Route path="/" exact >  <HomeMain />  </Route>
+          {/* <Route path="/login" >  <Login />  </Route> */}
+          {/* <Route path="/register" >  <Register />  </Route> */}
+        </div>
+        <Route path="/admin"  > <Admin /></Route>
+      </Switch>
+    </Router>
   );
 }
 

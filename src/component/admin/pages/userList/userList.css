@@ -1,0 +1,56 @@
+.userList {
+  flex: 4;
+}
+.userListTopbar {
+    padding: 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 9px -1px rgba(170, 170, 170, 0.75);
+  -webkit-box-shadow: 1px 0px 9px -1px rgba(170, 170, 170, 0.75);
+  -moz-box-shadow: 1px 0px 9px -1px rgba(170, 170, 170, 0.75);
+}
+.btn-primary {
+    width: 100px;
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .btn-primary:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+  }
+  
+  .btn-primary:active {
+    box-shadow: inset 0 0 0 20rem var(--darken-2),
+      inset 0 3px 4px 0 var(--darken-3),
+      0 0 1px var(--darken-2);
+  }
+.userListTopbar .form-group {
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+}
+
+.MuiDataGrid-root {
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 9px -1px rgba(170, 170, 170, 0.75);
+  -webkit-box-shadow: 1px 0px 9px -1px rgba(170, 170, 170, 0.75);
+  -moz-box-shadow: 1px 0px 9px -1px rgba(170, 170, 170, 0.75);
+}
+.MuiDataGrid-columnHeaderTitle {
+  font-size: 20px;
+}
+.MuiDataGrid-cell {
+  font-size: 15px;
+}
